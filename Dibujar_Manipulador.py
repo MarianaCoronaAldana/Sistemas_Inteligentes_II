@@ -18,13 +18,13 @@ def dibujar_manipulador(q):
 
     color=np.random.rand(3,);
 
-    plt.plot([0, t01[0]], [0, t01[1]], c=color)
-    plt.plot([t01[0], t02[0]], [t01[1], t02[1]], c=color)
-    plt.plot([t02[0], t03[0]], [t02[1], t03[1]], c=color)
+    plt.plot([0, t01[0]], [0, t01[1]], color=color)
+    plt.plot([t01[0], t02[0]], [t01[1], t02[1]], color=color)
+    plt.plot([t02[0], t03[0]], [t02[1], t03[1]], color=color)
 
     plt.scatter(0, 0, marker='o', s=100)
-    plt.scatter(t01[0], t01[1], c=color, marker='o', s=100)
-    plt.scatter(t02[0], t02[1], c=color, marker='o', s=100)
+    plt.scatter(t01[0], t01[1], color=color, marker='o', s=100)
+    plt.scatter(t02[0], t02[1], color=color, marker='o', s=100)
 
     plt.xlim([-1, 1])
     plt.ylim([-1, 1])
